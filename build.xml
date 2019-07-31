@@ -36,7 +36,7 @@
         <delete dir="bin"/>
     </target>
     <target depends="clean" name="cleanall"/>
-    <target depends="build-subprojects,build-project,AllTests" name="build"/>
+    <target depends="build-subprojects,build-project,ToDoList" name="build"/>
     <target name="build-subprojects"/>
     <target depends="init" name="build-project">
         <echo message="${ant.project.name}: ${ant.file}"/>
@@ -63,23 +63,23 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-    <target name="MyStringStackTest">
+ <!--  <target name="MyStringStackTest">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
             <test name="test.MyStringStackTest" todir="${junit.output.dir}"/>
             <classpath refid="ToDoList Workshop.classpath"/>
         </junit>
-    </target>
-    <target name="AllTests">
+    </target>-->
+    <target name="ToDoList">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
-            <test name="test.AllTests" todir="${junit.output.dir}"/>
+            <test name="ToDoListTest" todir="${junit.output.dir}"/>
             <classpath refid="ToDoList Workshop.classpath"/>
         </junit>
     </target>
-    <target name="ToDoList Workshop">
+    <!--<target name="ToDoList Workshop">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
@@ -87,7 +87,7 @@
             <test name="test.MyStringStackTest" todir="${junit.output.dir}"/>
             <classpath refid="ToDoList Workshop.classpath"/>
         </junit>
-    </target>
+    </target>-->
     <target name="junitreport">
         <junitreport todir="${junit.output.dir}">
             <fileset dir="${junit.output.dir}">
