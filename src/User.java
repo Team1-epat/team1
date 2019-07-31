@@ -1,15 +1,15 @@
 
-public class Task {
+public class Users {
 	private String description = null;
 	private boolean isComplete = false;
 	
 	
-	public Task(String description) {
+	public Users(String description) {
 		super();
 		this.description = description;
 	}
 	
-	public Task(String description, boolean isComplete) {
+	public Users(String description, boolean isComplete) {
 		super();
 		this.description = description;
 		this.isComplete = isComplete;
