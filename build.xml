@@ -75,7 +75,7 @@
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
-            <test name="ToDoListTest" todir="${junit.output.dir}"/>
+            <test name="test.ToDoListTest" todir="${junit.output.dir}"/>
             <classpath refid="ToDoList Workshop.classpath"/>
         </junit>
     </target>
