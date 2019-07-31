@@ -23,6 +23,7 @@ private HashMap<String, Task> tasks = new HashMap<String, Task>();
 		if(task != null){
 			return task.isComplete();	
 		}else{
+			
 			return false;
 		}
 	}
