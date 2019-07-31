@@ -21,6 +21,7 @@ private HashMap<String, Task> tasks = new HashMap<String, Task>();
 	public boolean getStatus(String description) {
 		Task task = tasks.get(description);
 		if(task != null){
+			
 			return task.isComplete();	
 		}else{
 			
