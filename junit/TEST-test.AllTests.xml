@@ -119,8 +119,8 @@
     <property name="env.PROCESSOR_LEVEL" value="6" />
     <property name="env.VBOX_MSI_INSTALL_PATH" value="C:\Program Files\Oracle\VirtualBox\" />
   </properties>
-  <testcase classname="test.UserTest" name="testStackNull" time="0.002" />
-  <testcase classname="test.ToDoListTest" name="testPop" time="0.001" />
+  <testcase classname="test.UserTest" name="UserTest" time="0.002" />
+  <testcase classname="test.ToDoListTest" name="ToDoListTest" time="0.001" />
   <system-out><![CDATA[Test for default package
 hello
 hello
